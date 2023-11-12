@@ -26,7 +26,7 @@
                                             <backgroundConfiguration key="background" image="lovelace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="KGe-4U-MEf" kind="show" id="dVQ-CU-UtF"/>
+                                            <segue destination="KGe-4U-MEf" kind="show" identifier="lovelace" id="dVQ-CU-UtF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uj-ic-zAV">
@@ -36,7 +36,7 @@
                                             <backgroundConfiguration key="background" image="hopper"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="KGe-4U-MEf" kind="show" id="K3f-1D-P40"/>
+                                            <segue destination="KGe-4U-MEf" kind="show" identifier="hopper" id="K3f-1D-P40"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-vG-LMD">
@@ -46,7 +46,7 @@
                                             <backgroundConfiguration key="background" image="liskov"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="KGe-4U-MEf" kind="show" id="AM5-ST-rWJ"/>
+                                            <segue destination="KGe-4U-MEf" kind="show" identifier="liskov" id="AM5-ST-rWJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="121" y="-34"/>
         </scene>
-        <!--View Controller-->
+        <!--Secundario View Controller-->
         <scene sceneID="Kgi-2Y-uYL">
             <objects>
-                <viewController id="KGe-4U-MEf" sceneMemberID="viewController">
+                <viewController id="KGe-4U-MEf" customClass="SecundarioViewController" customModule="Pioneras" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BTs-sH-GDT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +104,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t9n-0B-A8Y"/>
+                    <connections>
+                        <outlet property="textView" destination="grp-QV-U22" id="IrZ-uV-QMH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49f-IX-A8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="AdP-Rz-6dR" userLabel="Exit" sceneMemberID="exit"/>

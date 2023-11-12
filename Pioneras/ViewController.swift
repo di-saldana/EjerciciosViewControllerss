@@ -14,11 +14,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
     @IBAction func retornoDeSecundaria(segue: UIStoryboardSegue) {
-        print("Volviendo atrás por \(segue.identifier)...")
+        print("Volviendo atrás...")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier=="lovelace") {
+            if let vc2 = segue.destination as? SecundarioViewController {
+                vc2.nombreAsset = "lovelace_bio"
+            }
+        }
+        
+        if (segue.identifier=="hopper") {
+            if let vc2 = segue.destination as? SecundarioViewController {
+                vc2.nombreAsset = "hopper_bio"
+            }
+        }
+        
+        if (segue.identifier=="liskov") {
+            if let vc2 = segue.destination as? SecundarioViewController {
+                vc2.nombreAsset = "liskov_bio"
+            }
+        }
+     }
 
 }
 

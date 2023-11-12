@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF59757F2B018655000B7931 /* SecundarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF59757E2B018655000B7931 /* SecundarioViewController.swift */; };
 		EFC365ED2B017A150048C23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC365EC2B017A150048C23E /* AppDelegate.swift */; };
 		EFC365EF2B017A150048C23E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC365EE2B017A150048C23E /* SceneDelegate.swift */; };
 		EFC365F12B017A150048C23E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC365F02B017A150048C23E /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF59757E2B018655000B7931 /* SecundarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecundarioViewController.swift; sourceTree = "<group>"; };
 		EFC365E92B017A150048C23E /* Pioneras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pioneras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC365EC2B017A150048C23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFC365EE2B017A150048C23E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				EFC365F52B017A180048C23E /* Assets.xcassets */,
 				EFC365F72B017A180048C23E /* LaunchScreen.storyboard */,
 				EFC365FA2B017A180048C23E /* Info.plist */,
+				EF59757E2B018655000B7931 /* SecundarioViewController.swift */,
 			);
 			path = Pioneras;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC365F12B017A150048C23E /* ViewController.swift in Sources */,
+				EF59757F2B018655000B7931 /* SecundarioViewController.swift in Sources */,
 				EFC365ED2B017A150048C23E /* AppDelegate.swift in Sources */,
 				EFC365EF2B017A150048C23E /* SceneDelegate.swift in Sources */,
 			);
