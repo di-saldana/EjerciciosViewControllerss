@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    @IBAction func retornoDeSecundaria(segue: UIStoryboardSegue) {
+        print("Volviendo atrás por \(segue.identifier)...")
+    }
+    
 
 }
 

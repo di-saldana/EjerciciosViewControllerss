@@ -25,6 +25,9 @@
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" image="lovelace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="KGe-4U-MEf" kind="show" id="dVQ-CU-UtF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uj-ic-zAV">
                                         <rect key="frame" x="0.0" y="256.33333333333331" width="393" height="246.33333333333331"/>
@@ -32,6 +35,9 @@
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" image="hopper"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="KGe-4U-MEf" kind="show" id="K3f-1D-P40"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-vG-LMD">
                                         <rect key="frame" x="0.0" y="512.66666666666663" width="393" height="246.33333333333337"/>
@@ -39,6 +45,9 @@
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" image="liskov"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="KGe-4U-MEf" kind="show" id="AM5-ST-rWJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -57,11 +66,61 @@
             </objects>
             <point key="canvasLocation" x="121" y="-34"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Kgi-2Y-uYL">
+            <objects>
+                <viewController id="KGe-4U-MEf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BTs-sH-GDT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77V-cY-FyL">
+                                <rect key="frame" x="164.66666666666666" y="60" width="64" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Atrás"/>
+                                <connections>
+                                    <action selector="retornoDeSecundaria:" destination="AdP-Rz-6dR" eventType="touchUpInside" id="aAR-Ij-4MV"/>
+                                    <segue destination="AdP-Rz-6dR" kind="unwind" unwindAction="retornoDeSecundariaWithSegue:" id="5YA-pU-iwp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grp-QV-U22">
+                                <rect key="frame" x="40" y="155" width="313" height="297"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e0w-HX-uZc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e0w-HX-uZc" firstAttribute="bottom" secondItem="grp-QV-U22" secondAttribute="bottom" constant="390" id="4an-mp-AcC"/>
+                            <constraint firstItem="grp-QV-U22" firstAttribute="centerX" secondItem="BTs-sH-GDT" secondAttribute="centerX" id="BiM-08-xDI"/>
+                            <constraint firstItem="77V-cY-FyL" firstAttribute="top" secondItem="e0w-HX-uZc" secondAttribute="top" constant="60" id="UbY-bs-EG3"/>
+                            <constraint firstItem="grp-QV-U22" firstAttribute="top" secondItem="77V-cY-FyL" secondAttribute="bottom" constant="60" id="Vln-i5-60h"/>
+                            <constraint firstItem="77V-cY-FyL" firstAttribute="centerX" secondItem="BTs-sH-GDT" secondAttribute="centerX" id="Whq-Zx-mGJ"/>
+                            <constraint firstItem="grp-QV-U22" firstAttribute="leading" secondItem="e0w-HX-uZc" secondAttribute="leading" constant="40" id="oPp-Dh-hZG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t9n-0B-A8Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49f-IX-A8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AdP-Rz-6dR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1067.9389312977098" y="-34.507042253521128"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AM5-ST-rWJ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="hopper" width="320" height="215"/>
         <image name="liskov" width="320" height="215"/>
         <image name="lovelace" width="320" height="215"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
